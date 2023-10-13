@@ -2,6 +2,8 @@
 import AboutImage from '../../assests/about.jpg'
 import {HiDownload} from 'react-icons/hi'
 // import CV from '../../assests/cv.pdf'
+import Card from '../../components/Card'
+import data from './data';
 import "./about.css";
 
 const About = () => {
@@ -15,7 +17,19 @@ const About = () => {
         </div>
         <div className="about__right">
           <h2>About Me</h2>
-          <div className='about__cards'></div>
+          <div className='about__cards'>
+            {
+              data.map(item => (
+                <Card key={item.id} className="about__card">
+                  <span className='about__card-icon'>{item.icon}</span>
+
+                  <h5>{item.title}</h5>
+                  <small>{item.desc}</small>
+
+                </Card>
+              ))
+            }
+          </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui enim libero architecto? Porro, adipisci blanditiis qui expedita aliquid 
           </p>
