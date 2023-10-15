@@ -8,7 +8,7 @@ import Image6 from "../../assests/6.jpg";
 const data = [
   {
     id: 1,
-    category: "Frontend Development",
+    category: 'frontend',
     image: Image1,
     title: "Project title one frontend devl",
     desc: "project title one frontend devlopemnt project title one frontend devlopemnt project title one frontend devlopemnt",
@@ -17,7 +17,7 @@ const data = [
   },
   {
     id: 2,
-    category: "Frontend Development",
+    category: 'frontend',
     image: Image2,
     title: "Project title one frontend devl",
     desc: "project title one frontend devlopemnt project title one frontend devlopemnt project title one frontend devlopemnt",
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 3,
-    category: "frontend",
+    category: 'backend',
     image: Image3,
     title: "Project title one frontend devl",
     desc: "project title one frontend devlopemnt project title one frontend devlopemnt project title one frontend devlopemnt",
