@@ -8,7 +8,7 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" data-aos ="fade-in">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
