@@ -33,7 +33,9 @@ const About = () => {
           <p>
           Hi , I'm Rohit Sharma a third-year B.Tech student interested in web development and competitive programming. 
           </p>
-          <p>I am passionate about building web applications, and I am constantly learning new technologies and taking on new challenges.
+          <p>I am passionate about building web applications, and I am constantly learning new technologies and taking on new challenges and 
+            In my free time , I love to play cricket and listen to music.
+            <br /> <br />
           Thank you for taking the time to visit my website, and I look forward to connecting with you.
           </p>
           {/* <a href={CV} download className='btn primary'></a> */}
