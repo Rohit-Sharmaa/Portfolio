@@ -19,7 +19,7 @@ export const App = () => {
       <Header />
       <About />
       <Services />
-      <Portfolio />
+      {/* <Portfolio /> */}
 
       <Contact />
       <Footer />

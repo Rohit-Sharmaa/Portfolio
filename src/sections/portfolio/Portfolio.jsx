@@ -24,8 +24,8 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio">
-      <h2>Recent Projects</h2>
+    <section id="projects">
+      <h2>Projects</h2>
       <p>Here are some of my projects</p>
 
       <div className="container portfolio__container">

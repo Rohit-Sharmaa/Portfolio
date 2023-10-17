@@ -4,11 +4,11 @@ import {AiFillCreditCard} from 'react-icons/ai'
 
 
 const data = [
-  {id: 1 , icon: <RiReactjsLine/> , title: 'Frontend Development' , desc: "My designs are responsive and user-friendly"} , 
+  {id: 1 , icon: <RiReactjsLine/> , title: 'Frontend Development' , desc: "HTML , CSS , Bootstrap ,  javaScript , React"} , 
 
-  {id: 1 , icon: <FaServer/> , title: 'Backend Development' , desc: "I will make sure that your website is efficient and reliable"} , 
+  {id: 2 , icon: <FaServer/> , title: 'Backend Development' , desc: "Nodejs , Expressjs , MongoDB , SQL , Git , Github"} , 
 
-  {id: 1 , icon: <AiFillCreditCard/> , title: 'Video Editing' , desc: "To transform your raw footage into a compelling and unforgettable story."} 
+  {id: 3 , icon: <AiFillCreditCard/> , title: 'Data Structure and Algorithm' , desc: " using java"} 
 ]
 
 export default data;

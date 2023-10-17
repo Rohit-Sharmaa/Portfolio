@@ -1,6 +1,6 @@
 import Logo from "../../assests/logo.jpg";
 import data from "./data";
-import {IoIosColorPalette} from 'react-icons/io';
+import {MdOutlineLightMode} from 'react-icons/md';
 import "./navbar.css";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button id="theme__icon"><IoIosColorPalette/></button>
+        <button id="theme__icon"><MdOutlineLightMode/></button>
       </div>
     </nav>
   );

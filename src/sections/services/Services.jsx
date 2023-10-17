@@ -4,9 +4,9 @@ import Card from "../../components/Card";
 
 const Services = () => {
   return (
-    <section id="services">
-      <h2>Services</h2>
-      <p>Here are my services below</p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Here are my skills below</p>
 
       <div className="container services__container" data-aos ="fade-up">
         {data.map((item) => (

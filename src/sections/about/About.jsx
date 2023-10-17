@@ -31,14 +31,18 @@ const About = () => {
             }
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui enim libero architecto? Porro, adipisci blanditiis qui expedita aliquid 
+          Hi , I'm Rohit Sharma a third-year B.Tech student interested in web development and competitive programming. 
           </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et molestias sunt dolore odio error tenetur officiis ipsam exercitationem non optio dicta facilis repudiandae fugiat? At inventore reprehenderit aspernatur temporibus.</p>
+          <p>I am passionate about building web applications, and I am constantly learning new technologies and taking on new challenges.
+          Thank you for taking the time to visit my website, and I look forward to connecting with you.
+          </p>
           {/* <a href={CV} download className='btn primary'></a> */}
           <a href="" className='btn primary'>Download cv <HiDownload/></a>
         </div>
       </div>
     </section>
+
+   
   );
 };
 
