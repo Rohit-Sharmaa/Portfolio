@@ -11,6 +11,7 @@
   transition: var(--transition);
 }
 
+
 .about__portrait:hover{
   border-width: 0;
 }
@@ -39,7 +40,7 @@
   transition: var(--transition);
 }
 
-.card.about__card:hover .about__card-icon{
+.about__card:hover .about__card-icon{
   background: var(--color-primary);
   color: var(--color-white);
 }

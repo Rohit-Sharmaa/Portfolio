@@ -1,23 +1,24 @@
 
 import AboutImage from '../../assests/about.jpg'
 import {HiDownload} from 'react-icons/hi'
-// import CV from '../../assests/cv.pdf'
+import CV from "../../assests/Rohit sharma-Resume.pdf"
 import Card from '../../components/Card'
 import data from './data';
 import "./about.css";
 
 const About = () => {
   return (
+    
     <section id="about" data-aos ="fade-in">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="" />
+            <img src={AboutImage} alt="Photo" />
           </div>
         </div>
         <div className="about__right">
           <h2>About Me</h2>
-          <div className='about__cards'>
+          <div className='about__cards '>
             {
               data.map(item => (
                 <Card key={item.id} className="about__card">
@@ -30,6 +31,7 @@ const About = () => {
               ))
             }
           </div>
+          
           <p>
           Hi , I'm Rohit Sharma a third-year B.Tech student interested in web development and competitive programming. 
           </p>
@@ -39,12 +41,10 @@ const About = () => {
           Thank you for taking the time to visit my website, and I look forward to connecting with you.
           </p>
           {/* <a href={CV} download className='btn primary'></a> */}
-          <a href="" className='btn primary'>Download cv <HiDownload/></a>
+          <a href={CV} download className='btn primary'>Download cv <HiDownload/></a>
         </div>
       </div>
     </section>
-
-   
   );
 };
 

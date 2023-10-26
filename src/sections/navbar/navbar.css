@@ -31,6 +31,10 @@ nav{
 
 .nav__menu a {
   color: white;
+  transition: var(--transition);
+}
+.nav__menu li:hover{
+  transform: scale(1.1);
 }
 
 #theme__icon{
