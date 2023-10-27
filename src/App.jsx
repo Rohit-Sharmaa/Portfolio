@@ -2,12 +2,12 @@ import Navbar from "./sections/navbar/Navbar";
 import Header from "./sections/header/Header";
 
 import Services from "./sections/services/Services";
-import Portfolio from "./sections/portfolio/Portfolio";
 
 import Contact from "./sections/contact/Contact";
 import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
 import About from "./sections/about/About";
+import Project from "./sections/Projects/Project";
 
 export const App = () => {
   return (
@@ -16,7 +16,7 @@ export const App = () => {
       <Header />
       <About />
       <Services />
-      {/* <Portfolio /> */}
+      <Project/>
       <Contact />
       <Footer />
       <FloatingNav />

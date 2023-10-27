@@ -8,7 +8,7 @@ const data = [
   { id: "1", link: "#", icon: <AiFillHome /> },
   { id: "2", link: "#about", icon: <BsPersonFill /> },
   { id: "3", link: "#skills", icon: <GiSkills /> },
-  { id: "4", link: "#skills", icon: <AiFillProject /> },
+  { id: "4", link: "#project", icon: <AiFillProject /> },
   { id: "5", link: "#contact", icon: <AiFillMessage /> },
 ];
 
