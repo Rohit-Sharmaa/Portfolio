@@ -32,4 +32,13 @@
 
 
 
+.dark__theme .card{
+  background-color: var(--card-color) !important;
+}
+
+.dark__theme .card h4{
+ color: var(--text-color);
+}
+
+
 

@@ -1,15 +1,17 @@
-
+import React , {useEffect, useState} from 'react';
 import AboutImage from '../../assests/about.jpg'
 import {HiDownload} from 'react-icons/hi'
 import CV from "../../assests/Rohit sharma-Resume.pdf"
-import Card from '../../components/Card'
-import data from './data';
 import "./about.css";
 
-const About = () => {
+
+const About = ({theme}) => {
+
+
   return (
     
-    <section id="about" data-aos ="fade-in">
+    <section id="about" data-aos ="fade-in"  className={`${theme}`}>
+  
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">

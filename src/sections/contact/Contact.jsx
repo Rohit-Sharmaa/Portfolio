@@ -2,9 +2,9 @@
 import contacts from './data'
 import "./contact.css";
 
-const Contact = () => {
+const Contact = ({theme}) => {
   return (
-    <section id="contact">
+    <section id="contact" className={`${theme}`}>
       <h2>Get In Touch</h2>
       <p>Send me a message</p>
       <div className="container contact__container" data-aos ="fade-in">

@@ -1,13 +1,17 @@
 import Logo from "../../assests/logo.jpg";
 import data from "./data";
-import {MdOutlineLightMode} from 'react-icons/md';
+import { MdOutlineLightMode } from "react-icons/md";
 import "./navbar.css";
+import { Switch } from "theme-ui";
 
-const Navbar = () => {
+
+const Navbar = ({theme , check , toggleTheme}) => {
+  
+
   return (
-    <nav>
+    <nav className={`${theme}`}>
       <div className="container nav__container">
-        <a href="index.html"   className="nav__logo ">
+        <a href="index.html" className="nav__logo ">
           <img src={Logo} alt="Logo" />
         </a>
         <ul className="nav__menu">
@@ -17,7 +21,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button id="theme__icon"><MdOutlineLightMode/></button>
+        <div>
+          <Switch
+            id="theme__icon"
+           checked={check}
+           onClick={toggleTheme}
+            className={check ? "theme__icon-checked" : ""}
+       >
+          </Switch>
+        </div>
       </div>
     </nav>
   );
