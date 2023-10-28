@@ -51,3 +51,6 @@ nav{
   }
   
 }
+.theme__icon-checked {
+  background-color: green  !important;
+}
