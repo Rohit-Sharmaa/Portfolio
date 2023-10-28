@@ -3,26 +3,10 @@ import data from "./data";
 import { MdOutlineLightMode } from "react-icons/md";
 import "./navbar.css";
 import { Switch } from "theme-ui";
-import { useState } from "react";
-import { useEffect } from "react";
 
-const Navbar = () => {
-  const [theme, setTheme] = useState("light");
-  const [check, setCheck] = useState(false);
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      setCheck(!check);
-    } else {
-      setTheme("light");
-      setCheck(!check);
-    }
-  };
-
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+const Navbar = ({theme , check , toggleTheme}) => {
+  
 
   return (
     <nav className={`${theme}`}>
@@ -40,8 +24,8 @@ const Navbar = () => {
         <div>
           <Switch
             id="theme__icon"
-            checked={check}
-            onClick={toggleTheme}
+           checked={check}
+           onClick={toggleTheme}
             className={check ? "theme__icon-checked" : ""}
        >
           </Switch>

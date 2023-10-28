@@ -2,9 +2,9 @@ import { links, socials } from "./data";
 
 import "./footer.css";
 
-const Footer = () => {
+const Footer = ({theme}) => {
   return (
-    <footer>
+    <footer className={`${theme}`}>
       <div className="container footer__container">
         <ul className="nav__menu">
           {links.map((flink) => (

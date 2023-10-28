@@ -19,6 +19,9 @@
   --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
   --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
   --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+  --background-color: #161616;
+  --text-color: #fff;
+  --card-color: #068FFF;
 
   /* GENERAL CONTAINER VARIABLES */
   --container-width-lg: 76%;
@@ -219,3 +222,10 @@ img {
       width: var(--container-width-md);
   }
 }
+
+
+
+/* dark theme colors  */
+
+  
+

@@ -5,12 +5,12 @@ import CV from "../../assests/Rohit sharma-Resume.pdf"
 import "./about.css";
 
 
-const About = () => {
+const About = ({theme}) => {
 
 
   return (
     
-    <section id="about" data-aos ="fade-in" >
+    <section id="about" data-aos ="fade-in"  className={`${theme}`}>
   
       <div className="container about__container">
         <div className="about__left">

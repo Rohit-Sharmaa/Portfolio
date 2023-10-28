@@ -5,13 +5,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./header.css";
 
-const Header = () => {
+const Header = ({theme}) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <header id="header">
+    <header id="header" className={`${theme}`}>
       <div className="container header__container">
         <div className="header__profile" data-aos="fade-in">
           <img src={HeaderImage} alt=" Profile Image" />

@@ -1,0 +1,15 @@
+.dark__theme{
+  background-color: var(--background-color) !important;
+  box-shadow: none;
+}
+
+.dark__theme h3, .dark__theme p , .dark__theme h2 {
+  color: var(--text-color) !important;
+}
+.dark__theme .light:hover {
+  color: var(--text-color) !important;
+}
+
+
+
+

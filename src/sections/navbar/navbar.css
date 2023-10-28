@@ -52,5 +52,5 @@ nav{
   
 }
 .theme__icon-checked {
-  background-color: green  !important;
+  background-color: var(--color-primary)  !important;
 }
