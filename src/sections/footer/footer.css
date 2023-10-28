@@ -1,7 +1,7 @@
 footer {
   background: var(--color-primary);
-  padding-top: 7rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   box-shadow: 0 -1rem 1.5rem hsla(var(--primary-hue) , 68% , 42% , 20%);
   transition: var(--transition);
 }
