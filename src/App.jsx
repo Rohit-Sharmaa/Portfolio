@@ -11,9 +11,13 @@ import { useEffect } from "react";
 
 
 export const App = () => {
-  const [theme, setTheme] = useState("light__theme");
-  const [check, setCheck] = useState(false);
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'light__theme'
 
+  );
+ 
+  const [check, setCheck] = useState(theme === "light__theme" ? false : true);
+    
   const toggleTheme = () => {
     if (theme === "light__theme") {
       setTheme("dark__theme");
@@ -25,6 +29,7 @@ export const App = () => {
   };
 
   useEffect(() => {
+    localStorage.setItem('theme', theme);
     document.body.className = theme;
   }, [theme]);
 
