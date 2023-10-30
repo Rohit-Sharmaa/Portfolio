@@ -18,10 +18,11 @@
   color: var(--color-white) ;
   transition: var(--transition);
 }
-
+@media (hover: hover){
 .service:hover .service__icon {
   background: var(--color-light);
   color: var(--color-primary);
+}
 }
 
 

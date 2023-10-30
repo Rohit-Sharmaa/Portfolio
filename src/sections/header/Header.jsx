@@ -22,11 +22,11 @@ const Header = ({theme}) => {
           dedicated B Tech student .
         </p>
         <div className="header__cta" data-aos="fade-up">
-          <a href="#contact" className="btn primary">
-             Connect
+          <a href="https://github.com/Rohit-Sharmaa" className="btn primary">
+             Github
           </a>
-          <a href="#portfolio" className="btn light">
-            Projects
+          <a href="#contact" className="btn light">
+          Connect
           </a>
         </div>
 
