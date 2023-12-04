@@ -18,7 +18,7 @@ const Header = ({theme}) => {
         </div>
         <h3 data-aos="fade-up">Rohit Sharma</h3>
         <p data-aos="fade-up">
-          Hi , I'm Rohit Sharma , a passionate full-stack web developer and a
+          Hi , I'm Rohit Sharma , a passionate frontend  developer and a
           dedicated B Tech student .
         </p>
         <div className="header__cta" data-aos="fade-up">
