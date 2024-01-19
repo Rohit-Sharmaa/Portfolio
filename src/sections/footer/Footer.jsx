@@ -18,7 +18,7 @@ const Footer = ({theme}) => {
           {socials.map((social) => (
             <a
               key={social.id}
-              href={social.icon}
+              href={social.link}
               target="_blank"
               rel="noopener noreferrer"
             >
