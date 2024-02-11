@@ -6,18 +6,18 @@ import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
 import About from "./sections/about/About";
 import Project from "./sections/Projects/Project";
+import Exp from "./sections/experiences/Exp";
+
 import { useState } from "react";
 import { useEffect } from "react";
 
-
 export const App = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme') || 'light__theme'
-
+    localStorage.getItem("theme") || "light__theme"
   );
- 
+
   const [check, setCheck] = useState(theme === "light__theme" ? false : true);
-    
+
   const toggleTheme = () => {
     if (theme === "light__theme") {
       setTheme("dark__theme");
@@ -29,7 +29,7 @@ export const App = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem('theme', theme);
+    localStorage.setItem("theme", theme);
     document.body.className = theme;
   }, [theme]);
 
@@ -38,6 +38,8 @@ export const App = () => {
       <Navbar theme={theme} check={check} toggleTheme={toggleTheme} />
       <Header theme={theme} />
       <About theme={theme} />
+
+      <Exp theme={theme} />
       <Services theme={theme} />
       <Project theme={theme} />
       <Contact theme={theme} />

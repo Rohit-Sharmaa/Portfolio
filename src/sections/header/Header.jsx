@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./header.css";
 
-const Header = ({theme}) => {
+const Header = ({ theme }) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -14,18 +14,19 @@ const Header = ({theme}) => {
     <header id="header" className={`${theme}`}>
       <div className="container header__container">
         <div className="header__profile" data-aos="fade-in">
-          <img src={HeaderImage} alt=" Profile Image" />
+          <img src={HeaderImage} alt=" Profile" />
         </div>
         <h3 data-aos="fade-up">Rohit Sharma</h3>
         <p data-aos="fade-up">
-          Hi , I'm Rohit Sharma , a passionate full-Stack  developer and a dedicated B.Tech student.
+          Hi , I'm Rohit Sharma , a passionate full-Stack developer and a
+          dedicated B.Tech student.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="https://github.com/Rohit-Sharmaa" className="btn primary">
-             Github
+            Github
           </a>
           <a href="#contact" className="btn light">
-          Connect
+            Connect
           </a>
         </div>
 

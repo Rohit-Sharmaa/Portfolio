@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import AboutImage from "../../assests/about.jpg";
 import { HiDownload } from "react-icons/hi";
 import CV from "../../assests/Rohit sharma-Resume.pdf";
@@ -10,7 +9,7 @@ const About = ({ theme }) => {
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="Photo" />
+            <img src={AboutImage} alt="Rohit's" />
           </div>
         </div>
         <div className="about__right">

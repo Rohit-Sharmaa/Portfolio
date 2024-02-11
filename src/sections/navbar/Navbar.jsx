@@ -1,13 +1,10 @@
-import Logo from "../../assests/logo.jpg";
+import Logo from "../../assests/1111.jpg";
 import data from "./data";
-import { MdOutlineLightMode } from "react-icons/md";
+
 import "./navbar.css";
 import { Switch } from "theme-ui";
 
-
-const Navbar = ({theme , check , toggleTheme}) => {
-  
-
+const Navbar = ({ theme, check, toggleTheme }) => {
   return (
     <nav className={`${theme}`}>
       <div className="container nav__container">
@@ -22,13 +19,20 @@ const Navbar = ({theme , check , toggleTheme}) => {
           ))}
         </ul>
         <div>
-          <Switch
+          {/* <Switch
             id="theme__icon"
            checked={check}
            onClick={toggleTheme}
             className={check ? "theme__icon-checked" : ""}
        >
-          </Switch>
+          </Switch> */}
+
+          <Switch
+            id="theme__icon"
+            defaultChecked={check}
+            onClick={toggleTheme}
+            className={check ? "theme__icon-checked" : ""}
+          />
         </div>
       </div>
     </nav>

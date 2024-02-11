@@ -1,0 +1,10 @@
+.vertical-timeline {
+  padding: 4em 0 !important;
+}
+
+.dark__theme h4 {
+  color: #fff !important;
+}
+.dark__theme span.vertical-timeline-element-date {
+  color: #fff !important;
+}
