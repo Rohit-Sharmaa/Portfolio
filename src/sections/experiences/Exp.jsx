@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import "./exp.css";
 const Exp = ({ theme }) => {
   return (
-    <section id="exp" className={`${theme}`}>
+    <section id="Exp" className={`${theme}`}>
       <h2>Experiences</h2>
       <div className="container exp-container">
         <VerticalTimeline lineColor="hsl(270 , 5% , 94%)">
