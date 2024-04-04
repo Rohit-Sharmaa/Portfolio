@@ -2,8 +2,9 @@ import AboutImage from "../../assests/about.jpg";
 import { HiDownload } from "react-icons/hi";
 import CV from "../../assests/Rohit sharma-Resume.pdf";
 import "./about.css";
-
-const About = ({ theme }) => {
+import { useTheme } from "../../components/ThemeContext";
+const About = () => {
+  const { theme } = useTheme();
   return (
     <section id="about" data-aos="fade-in" className={`${theme}`}>
       <div className="container about__container">

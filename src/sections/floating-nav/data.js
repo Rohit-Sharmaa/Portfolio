@@ -1,6 +1,6 @@
 import { AiFillHome } from "react-icons/ai";
 import { BsPersonFill } from "react-icons/bs";
-import { GiSkills } from "react-icons/gi";
+
 import { AiFillProject } from "react-icons/ai";
 import { AiFillMessage } from "react-icons/ai";
 import { FaCode } from "react-icons/fa";

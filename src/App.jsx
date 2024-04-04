@@ -7,45 +7,45 @@ import FloatingNav from "./sections/floating-nav/FloatingNav";
 import About from "./sections/about/About";
 import Project from "./sections/Projects/Project";
 import Exp from "./sections/experiences/Exp";
-
-import { useState } from "react";
-import { useEffect } from "react";
+import { ThemeProvider } from "./components/ThemeContext";
 
 export const App = () => {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "light__theme"
-  );
+  //   const [theme, setTheme] = useState(
+  //     localStorage.getItem("theme") || "light__theme"
+  //   );
 
-  const [check, setCheck] = useState(theme === "light__theme" ? false : true);
+  // const [check, setCheck] = useState(theme === "light__theme" ? false : true);
 
-  const toggleTheme = () => {
-    if (theme === "light__theme") {
-      setTheme("dark__theme");
-      setCheck(!check);
-    } else {
-      setTheme("light__theme");
-      setCheck(!check);
-    }
-  };
+  // const toggleTheme = () => {
+  //   if (theme === "light__theme") {
+  //     setTheme("dark__theme");
+  //     setCheck(!check);
+  //   } else {
+  //     setTheme("light__theme");
+  //     setCheck(!check);
+  //   }
+  // };
 
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.body.className = theme;
-  }, [theme]);
+  // useEffect(() => {
+  //   localStorage.setItem("theme", theme);
+  //   document.body.className = theme;
+  // }, [theme]);
 
   return (
-    <main>
-      <Navbar theme={theme} check={check} toggleTheme={toggleTheme} />
-      <Header theme={theme} />
-      <About theme={theme} />
+    <ThemeProvider>
+      <main>
+        <Navbar />
+        <Header />
+        <About />
 
-      <Exp theme={theme} />
-      <Services theme={theme} />
-      <Project theme={theme} />
-      <Contact theme={theme} />
-      <Footer theme={theme} />
-      <FloatingNav theme={theme} />
-    </main>
+        <Exp />
+        <Services />
+        <Project />
+        <Contact />
+        <Footer />
+        <FloatingNav />
+      </main>
+    </ThemeProvider>
   );
 };
 

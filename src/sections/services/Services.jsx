@@ -1,8 +1,9 @@
 import "./services.css";
 import data from "./data";
 import Card from "../../components/Card";
-
-const Services = ({ theme }) => {
+import { useTheme } from "../../components/ThemeContext";
+const Services = () => {
+  const { theme } = useTheme();
   return (
     <section className={`${theme}`}>
       <h2>Skills</h2>

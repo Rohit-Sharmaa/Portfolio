@@ -4,12 +4,12 @@ import data from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./header.css";
-
-const Header = ({ theme }) => {
+import { useTheme } from "../../components/ThemeContext";
+const Header = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
-
+  const { theme } = useTheme();
   return (
     <header id="header" className={`${theme}`}>
       <div className="container header__container">
