@@ -6,7 +6,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./exp.css";
-const Exp = ({ theme }) => {
+import { useTheme } from "../../components/ThemeContext";
+const Exp = () => {
+  const { theme } = useTheme();
   return (
     <section id="Exp" className={`${theme}`}>
       <h2>Experiences</h2>

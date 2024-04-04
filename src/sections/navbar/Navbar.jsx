@@ -1,10 +1,11 @@
 import Logo from "../../assests/1111.jpg";
 import data from "./data";
-
 import "./navbar.css";
 import { Switch } from "theme-ui";
-
-const Navbar = ({ theme, check, toggleTheme }) => {
+import { useTheme } from "../../components/ThemeContext";
+const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
+  let check = localStorage.getItem("theme");
   return (
     <nav className={`${theme}`}>
       <div className="container nav__container">

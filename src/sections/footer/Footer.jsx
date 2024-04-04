@@ -1,8 +1,9 @@
 import { links, socials } from "./data";
 
 import "./footer.css";
-
-const Footer = ({theme}) => {
+import { useTheme } from "../../components/ThemeContext";
+const Footer = () => {
+  const { theme } = useTheme();
   return (
     <footer className={`${theme}`}>
       <div className="container footer__container">
@@ -27,9 +28,6 @@ const Footer = ({theme}) => {
           ))}
         </div>
       </div>
-
-
-      
     </footer>
   );
 };
