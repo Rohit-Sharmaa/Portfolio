@@ -6,9 +6,9 @@ import { FaTelegram } from "react-icons/fa6";
 export const links = [
   { id: 1, link: "#", title: "Home" },
   { id: 2, link: "#about", title: "About" },
-  { id: 3, link: "#skills", title: "Skills" },
-  { id: 4, link: "#projects", title: "Projects" },
-  { id: 5, link: "#contact", title: "Contact" },
+
+  { id: 3, link: "#project", title: "Projects" },
+  { id: 4, link: "#contact", title: "Contact" },
 ];
 
 export const socials = [
