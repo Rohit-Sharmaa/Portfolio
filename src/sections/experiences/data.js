@@ -8,15 +8,15 @@ const experienceData = [
     description:
       "During my time at Cha-Chi Company, I worked as a full stack developer, contributing to the development of a website. My duties encompassed both frontend and backend development, focusing on integrating user interfaces with backend functionalities to ensure a smooth user experience.",
     icon: <LiaLaptopCodeSolid />,
-    data: "Jan - 2024 - Present",
+    data: "Jan'24 - Aug'24",
   },
   {
-    title: "Frontend Development Intern",
+    title: "Frontend Developer Intern",
     location: " At UPL Ltd. , Sambha",
     description:
-      "During my internship at UPL Ltd., I gained practical experience in frontend development by working on HTML, CSS, and JavaScript. I contributed to designing and developing several web pages.",
+      "During my internship at UPL Ltd., I gained practical experience in frontend development by working on HTML, CSS, , JavaScript and ReactJs. I contributed to designing and developing several web pages.",
     icon: <CgWorkAlt />,
-    data: "Aug - 2023",
+    data: "Aug'23-sep'23",
   },
   {
     title: "Frontend Developer ",
@@ -24,7 +24,7 @@ const experienceData = [
     description:
       "I worked as a  frontend developer, I focused on crafting responsive designs for seamless user experiences across various devices.",
     icon: <LuGraduationCap />,
-    data: "Sep - 2023",
+    data: "Sep'23-Oct'23",
   },
 ];
 export default experienceData;

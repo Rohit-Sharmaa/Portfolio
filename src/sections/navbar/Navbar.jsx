@@ -6,6 +6,11 @@ import { useTheme } from "../../components/ThemeContext";
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   let check = localStorage.getItem("theme");
+  if (check === "light__theme") {
+    check = false;
+  } else {
+    check = true;
+  }
   return (
     <nav className={`${theme}`}>
       <div className="container nav__container">

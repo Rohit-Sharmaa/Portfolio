@@ -16,17 +16,17 @@ const About = () => {
         <div className="about__right">
           <h2>About Me</h2>
           <p>
-            Hi, I'm Rohit Sharma, a third-year B.Tech student with a CGPA of
-            9.00 as of the 4th semester and interested in web development and
-            competitive programming.
+            I'm Rohit Sharma , a pre-final year Bachelor of Technology (B. Tech)
+            Student at Bhagwan Parshuram Institute of Technology.
           </p>
           <p>
-            I am proficient in a variety of web development technologies [MERN]
-            and along with that , I have a max rating of 1540 on CodeChef.{" "}
+            I am passionate about competitive programming and web development.
+            Competitive Programming - pupil on codeforces and 3 star on
+            Codechef. Web development - Full Stack developer
             <br />
             <br />
             In my spare time, I enjoy playing cricket , games , and spending
-            time with my friends.
+            time with my friends and family.
             <br /> <br />
             Thank you for taking the time to visit my website, and I look
             forward to connecting with you.

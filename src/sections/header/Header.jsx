@@ -19,7 +19,7 @@ const Header = () => {
         <h3 data-aos="fade-up">Rohit Sharma</h3>
         <p data-aos="fade-up">
           Hi , I'm Rohit Sharma , a passionate full-Stack developer and a
-          dedicated B.Tech student.
+          Competitive programming.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="https://github.com/Rohit-Sharmaa" className="btn primary">
