@@ -1,38 +1,34 @@
-.about__container{
+.about__container {
   display: grid;
   grid-template-columns: 35% 53%;
   gap: 12%;
 }
 
-.about__portrait{
+.about__portrait {
   height: fit-content;
   max-height: 40rem;
   border: 1rem solid var(--color-white);
+  background-size: 100% 100%;
   transition: var(--transition);
 }
 
-
-.about__portrait:hover{
+.about__portrait:hover {
   border-width: 0;
 }
 
-
-.about__right p{
+.about__right p {
   margin-bottom: 0.8rem;
   margin-top: 2rem;
-
-
 }
 
-.about__right .btn{
+.about__right .btn {
   margin-top: 2.5rem;
 }
-
 
 /* MEDIA QUERIED TABLETS  */
 
 @media screen and (max-width: 1024px) {
-  .about__left{
+  .about__left {
     display: none;
   }
 
@@ -40,11 +36,10 @@
     grid-template-columns: 1fr;
   }
 
-  .about__right h2{
+  .about__right h2 {
     text-align: center;
   }
 }
-
 
 /* MEDIA QUERIES FOR PHONES  */
 @media screen and (max-width: 600px) {
@@ -53,11 +48,7 @@
     gap: 1rem;
   }
 
-  .about__right .btn{
+  .about__right .btn {
     margin-top: 2rem;
   }
-  
 }
-
-
-

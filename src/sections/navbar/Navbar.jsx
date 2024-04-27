@@ -1,4 +1,4 @@
-import Logo from "../../assests/1111.jpg";
+import Logo from "../../assests/ojpg.jpg";
 import data from "./data";
 import "./navbar.css";
 import { Switch } from "theme-ui";

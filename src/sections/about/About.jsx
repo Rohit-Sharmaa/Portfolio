@@ -1,6 +1,6 @@
-import AboutImage from "../../assests/about.jpg";
+import AboutImage from "../../assests/of.jpg";
 import { HiDownload } from "react-icons/hi";
-import CV from "../../assests/Rohit sharma-Resume.pdf";
+
 import "./about.css";
 import { useTheme } from "../../components/ThemeContext";
 const About = () => {
@@ -32,8 +32,8 @@ const About = () => {
             forward to connecting with you.
           </p>
 
-          <a href={CV} download className="btn primary">
-            Download cv <HiDownload />
+          <a href="#contact" className="btn primary">
+            Connect
           </a>
         </div>
       </div>

@@ -1,45 +1,42 @@
-.allproject{
+.allproject {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat( 3 , 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   align-items: start;
-  
 }
 
-.project__listing__image{
+.project__listing__image {
   width: 100%;
   height: fit-content;
   min-height: 7rem;
   max-height: 15rem;
-  background-color:var(--color-light);
+  /* background-color:var(--color-light); */
   border-radius: var(--border-radius-2);
   margin-bottom: 1.5rem;
   overflow: hidden;
 }
 
-.project__listing__image p{
+.project__listing__image p {
   margin: 0.5rem 0 2rem;
 }
 
-.project__listing__cta{
+.project__listing__cta {
   margin-top: 0.7rem;
   display: flex;
   gap: 1rem;
 }
 
 @media screen and (max-width: 600px) {
-  .allproject{
+  .allproject {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
 
-
 @media screen and (max-width: 1024) {
-  .allproject{
+  .allproject {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-  
 }
