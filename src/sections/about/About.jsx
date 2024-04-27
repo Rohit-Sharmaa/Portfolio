@@ -1,4 +1,4 @@
-import AboutImage from "../../assests/about.jpg";
+import AboutImage from "../../assests/of.jpg";
 import { HiDownload } from "react-icons/hi";
 
 import "./about.css";

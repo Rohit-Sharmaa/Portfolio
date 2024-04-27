@@ -1,7 +1,6 @@
 import Image2 from "../../assests/e.jpg";
 import Image3 from "../../assests/11.jpg";
-
-import Image6 from "../../assests/102.jpg";
+import Image6 from "../../assests/1.jpg";
 
 const data = [
   {

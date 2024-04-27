@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import HeaderImage from "../../assests/main.jpg";
-import { HiDownload } from "react-icons/hi";
-import CV from "../../assests/Rohit sharma-Resume.pdf";
+// import { HiDownload } from "react-icons/hi";
+import CV from "../../assests/Rohitt_Resume.pdf";
 import data from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
