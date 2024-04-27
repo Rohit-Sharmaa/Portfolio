@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import HeaderImage from "../../assests/main.jpg";
+import { HiDownload } from "react-icons/hi";
+import CV from "../../assests/Rohit sharma-Resume.pdf";
 import data from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,14 +21,14 @@ const Header = () => {
         <h3 data-aos="fade-up">Rohit Sharma</h3>
         <p data-aos="fade-up">
           Hi , I'm Rohit Sharma , a passionate full-Stack developer and a
-          Competitive programming.
+          Competitive programmer.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="https://github.com/Rohit-Sharmaa" className="btn primary">
             Github
           </a>
-          <a href="#contact" className="btn light">
-            Connect
+          <a href={CV} download className="btn light">
+            Resume
           </a>
         </div>
 
