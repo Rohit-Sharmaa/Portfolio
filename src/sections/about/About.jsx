@@ -2,15 +2,6 @@ import AboutImage from "../../assests/of.jpg";
 import "./about.css";
 import { useTheme } from "../../components/ThemeContext";
 
-// Function to split text into spans
-const splitTextIntoSpans = (text) => {
-  return text.split("").map((char, index) => (
-    <span key={index} style={{ animationDelay: `${index * 0.05}s` }}>
-      {char}
-    </span>
-  ));
-};
-
 const About = () => {
   const { theme } = useTheme();
   return (
@@ -24,19 +15,18 @@ const About = () => {
         <div className="about__right">
           <h2>About Me</h2>
           <p className="animated-paragraph paragraph-1">
-            {splitTextIntoSpans(
-              "I'm Rohit Sharma, a final year Bachelor of Technology (B. Tech) Student at Bhagwan Parshuram Institute of Technology."
-            )}
+            I'm Rohit Sharma, a final year Bachelor of Technology (B. Tech)
+            Student at Bhagwan Parshuram Institute of Technology.
           </p>
           <p className="animated-paragraph paragraph-2">
-            {splitTextIntoSpans(
-              "I am passionate about Full Stack development and Competitive Programming. In Competitive Programming - I'm rated with a badge pupil on Codeforces and 3-star on Codechef."
-            )}
+            I am passionate about Full Stack development and Competitive
+            Programming. In Competitive Programming - I'm rated with a badge
+            pupil on Codeforces and 3-star on Codechef.
           </p>
           <p className="animated-paragraph paragraph-3">
-            {splitTextIntoSpans(
-              "In my spare time, I enjoy playing cricket, games, and spending time with my friends and family. Thank you for taking the time to visit my website, and I look forward to connecting with you."
-            )}
+            In my spare time, I enjoy playing cricket, games, and spending time
+            with my friends and family. Thank you for taking the time to visit
+            my website, and I look forward to connecting with you.
           </p>
           <a href="#contact" className="btn primary">
             Connect
