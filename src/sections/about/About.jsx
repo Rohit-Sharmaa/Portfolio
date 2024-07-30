@@ -1,5 +1,4 @@
 import AboutImage from "../../assests/of.jpg";
-import { HiDownload } from "react-icons/hi";
 
 import "./about.css";
 import { useTheme } from "../../components/ThemeContext";

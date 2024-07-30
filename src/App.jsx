@@ -1,22 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import Loader from "./components/Loader";
-import Navbar from "./sections/navbar/Navbar";
-import Header from "./sections/header/Header";
-import Contact from "./sections/contact/Contact";
-import Footer from "./sections/footer/Footer";
-import FloatingNav from "./sections/floating-nav/FloatingNav";
-import About from "./sections/about/About";
-import Project from "./sections/Projects/Project";
-import Exp from "./sections/experiences/Exp";
 import { ThemeProvider } from "./components/ThemeContext";
+
+const Navbar = lazy(() => import("./sections/navbar/Navbar"));
+const Header = lazy(() => import("./sections/header/Header"));
+const Contact = lazy(() => import("./sections/contact/Contact"));
+const Footer = lazy(() => import("./sections/footer/Footer"));
+const FloatingNav = lazy(() => import("./sections/floating-nav/FloatingNav"));
+const About = lazy(() => import("./sections/about/About"));
+const Project = lazy(() => import("./sections/Projects/Project"));
+const Exp = lazy(() => import("./sections/experiences/Exp"));
 
 export const App = () => {
   const [loading, setLoading] = useState(true);
 
   const handleLoading = () => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1 * 1000);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -29,16 +28,18 @@ export const App = () => {
       {loading ? (
         <Loader />
       ) : (
-        <main>
-          <Navbar />
-          <Header />
-          <About />
-          <Exp />
-          <Project />
-          <Contact />
-          <Footer />
-          <FloatingNav />
-        </main>
+        <Suspense fallback={<Loader />}>
+          <main>
+            <Navbar />
+            <Header />
+            <About />
+            <Exp />
+            <Project />
+            <Contact />
+            <Footer />
+            <FloatingNav />
+          </main>
+        </Suspense>
       )}
     </ThemeProvider>
   );
