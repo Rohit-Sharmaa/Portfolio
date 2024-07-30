@@ -16,7 +16,7 @@ export const App = () => {
   const handleLoading = () => {
     setTimeout(() => {
       setLoading(false);
-    }, 2 * 1000);
+    }, 1 * 1000);
   };
 
   useEffect(() => {
