@@ -14,13 +14,12 @@ const Exp = lazy(() => import("./sections/experiences/Exp"));
 export const App = () => {
   const [loading, setLoading] = useState(true);
 
-  const handleLoading = () => {
-    setLoading(false);
-  };
-
   useEffect(() => {
-    window.addEventListener("load", handleLoading);
-    return () => window.removeEventListener("load", handleLoading);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import HeaderImage from "../../assests/main.jpg";
+import HeaderImage from "../../assests/main.png";
 
 // import { HiDownload } from "react-icons/hi";
-import CV from "../../assests/Rohitt_Resume.pdf";
+import CV from "../../assests/Rohit Sharma Resume.pdf";
 import data from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,10 +19,12 @@ const Header = () => {
         <div className="header__profile" data-aos="fade-in">
           <img src={HeaderImage} alt=" Profile" />
         </div>
-        <h3 data-aos="fade-up">Rohit Sharma</h3>
-        <p data-aos="fade-up">
-          Hi , I'm Rohit Sharma , a passionate full-Stack developer and a
-          Competitive programmer.
+        <h3 className="header_name" data-aos="fade-up">
+          <span className="header_text">Rohit Sharma</span>
+        </h3>
+        <p className="heading_para" data-aos="fade-up">
+          Hi, I'm Rohit Sharma. a passionate &nbsp;
+          <b className="header_paragraph_bold">FullStack Developer</b>
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="https://github.com/Rohit-Sharmaa" className="btn primary">

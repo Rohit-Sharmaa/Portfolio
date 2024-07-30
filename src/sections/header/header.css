@@ -1,61 +1,69 @@
-header{
-  margin-top: 5rem;
+header {
+  margin-top: 2rem;
   height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
-  background: var(--color-white);
+
   transition: var(--transition);
+  height: 100vh;
+
+  background-color: #eef5ff;
 }
 
-.header__container{
+.header__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-
 }
 
 .header__profile {
-  width: 18rem; 
+  width: 18rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
 
-.header__profile img{
-  box-shadow: 1px 1px 1px 1px #FFF2D8;
+.header__profile img {
+  box-shadow: 1px 1px 1px 1px #fff2d8;
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
-.dark__theme img{
+.dark__theme img {
   box-shadow: none !important;
 }
+.header_name {
+  font-size: 3rem;
+}
+
+.heading_para {
+  font-size: large;
+  color: var(--color-primary) !important;
+}
+.header_paragraph_bold {
+  color: var(--color-primary) !important;
+}
 @keyframes animate {
-  0%, 100%{
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-  50%{
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
 
-
-
-
-
-
-
-.header__container p{
+.header__container p {
   width: 35rem;
   text-align: center;
   margin: 0.6rem 0 2rem;
 }
-.header__cta{
+.header__cta {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
 
-.header__socials{
+.header__socials {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -64,52 +72,128 @@ header{
   gap: 1rem;
 }
 
-.header__socials a{
+.header__socials a {
   width: 1.8rem;
- aspect-ratio: 1/1;
+  aspect-ratio: 1/1;
   background: var(--color-light);
   color: var(--color-black);
   display: grid;
   place-items: center;
   border-radius: var(--border-radius-3);
-  
 }
 
-.header__socials a:hover{
+.header__socials a:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
   transform: translateX(-0.5rem);
 }
 
-
 /* MEDIA QUERIES FOR TABLETS  */
 @media screen and (max-width: 1024px) {
-  header{
+  header {
     margin-top: 0;
     height: 100vh;
   }
-  
 }
 
 /* media queries for phones  */
 @media screen and (max-width: 600px) {
-  .header__profile{
+  .header__profile {
     width: 14rem;
     height: 17rem;
     max-width: 60%;
     max-height: 35vh;
-
   }
-.header__container p{
-  width: 100%;
+  .header__container p {
+    width: 100%;
+  }
+  .header__cta {
+    gap: 1rem;
+  }
 
-} 
-.header__cta{
-  gap: 1rem;
-} 
-
-.header__socials {
-  display: none;
+  .header__socials {
+    display: none;
+  }
+  .header_name {
+    font-size: 2rem;
+  }
 }
+
+/* text animation css - Rohit Sharma text  */
+
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
+
+/* Base */
+
+.header_text {
+  background: url("/src/assests/photo-collage.png.png");
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: hsla(0, 0%, 0%, 0.08);
+  animation: zoomout 10s ease 500ms forwards;
 }
 
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+/* h3.header_name {
+  color: hsl(0, 0%, 28%);
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+h3.header_name span {
+  transition: 0.5s ease-out;
+}
+
+@media (hover: hover) {
+  h3.header_name:hover span {
+    color: var(--color-primary);
+    text-shadow: 0 2px 10px var(--color-primary),
+      0 2px 20px var(--color-primary), 0 0 40px var(--color-primary);
+    font-size: 2.3rem;
+  }
+} */
+
+/* heading im fullstack developer text animation  */
+
+.heading_para {
+  color: hsl(0, 0%, 28%);
+  font-weight: bold !important;
+  font-family: monospace;
+  font-size: 1.2rem;
+  letter-spacing: 1px !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 4px;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 30%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
