@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from "react";
+import Loader from "./components/Loader";
 import Navbar from "./sections/navbar/Navbar";
 import Header from "./sections/header/Header";
-//import Services from "./sections/services/Services";
 import Contact from "./sections/contact/Contact";
 import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
@@ -10,41 +11,35 @@ import Exp from "./sections/experiences/Exp";
 import { ThemeProvider } from "./components/ThemeContext";
 
 export const App = () => {
-  //   const [theme, setTheme] = useState(
-  //     localStorage.getItem("theme") || "light__theme"
-  //   );
+  const [loading, setLoading] = useState(true);
 
-  // const [check, setCheck] = useState(theme === "light__theme" ? false : true);
+  const handleLoading = () => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2 * 1000);
+  };
 
-  // const toggleTheme = () => {
-  //   if (theme === "light__theme") {
-  //     setTheme("dark__theme");
-  //     setCheck(!check);
-  //   } else {
-  //     setTheme("light__theme");
-  //     setCheck(!check);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   localStorage.setItem("theme", theme);
-  //   document.body.className = theme;
-  // }, [theme]);
+  useEffect(() => {
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
+  }, []);
 
   return (
     <ThemeProvider>
-      <main>
-        <Navbar />
-        <Header />
-        <About />
-
-        <Exp />
-        {/* <Services /> */}
-        <Project />
-        <Contact />
-        <Footer />
-        <FloatingNav />
-      </main>
+      {loading ? (
+        <Loader />
+      ) : (
+        <main>
+          <Navbar />
+          <Header />
+          <About />
+          <Exp />
+          <Project />
+          <Contact />
+          <Footer />
+          <FloatingNav />
+        </main>
+      )}
     </ThemeProvider>
   );
 };

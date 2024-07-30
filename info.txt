@@ -1,5 +1,4 @@
 
-
 background color for dark theme #161616
 button color #4E4FEB
 secondar color #068FFF

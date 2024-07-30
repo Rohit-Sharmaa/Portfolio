@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import HeaderImage from "../../assests/main.jpg";
+
 // import { HiDownload } from "react-icons/hi";
 import CV from "../../assests/Rohitt_Resume.pdf";
 import data from "./data";
