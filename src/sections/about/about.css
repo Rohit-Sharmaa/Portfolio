@@ -7,7 +7,7 @@
 .about__portrait {
   height: fit-content;
   max-height: 40rem;
-  /* border: 1rem solid var(--color-white); */
+  border: 1rem solid var(--color-white);
   background-size: 100% 100%;
   transition: var(--transition);
 }
@@ -17,11 +17,14 @@
 }
 
 .about__right p {
-  margin-bottom: 0.8rem;
   margin-top: 2rem;
+  font-size: larger;
+  font-weight: 500;
+  color: blue !important;
 }
 
 .about__right .btn {
+  margin: auto;
   margin-top: 2.5rem;
 }
 
@@ -51,4 +54,51 @@
   .about__right .btn {
     margin-top: 2rem;
   }
+}
+
+/* text animation  */
+
+.animated-paragraph {
+  letter-spacing: 1px !important;
+  padding: 4px;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 30%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 7s infinite linear;
+}
+
+.animated-paragraph {
+  position: relative;
+  overflow: hidden;
+}
+
+.paragraph-1 {
+  animation-delay: 0s;
+}
+
+.paragraph-2 {
+  animation-delay: 2s;
+}
+
+.paragraph-3 {
+  animation-delay: 5s;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* removed the animation white screen bug  */
+[data-aos^="fade"][data-aos^="fade"] {
+  opacity: 1 !important;
 }
