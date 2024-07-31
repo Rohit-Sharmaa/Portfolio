@@ -102,6 +102,6 @@
 }
 
 /* removed the animation white screen bug  */
-/* [data-aos^="fade"][data-aos^="fade"] {
+[data-aos^="fade"][data-aos^="fade"] {
   opacity: 1 !important;
-} */
+}
