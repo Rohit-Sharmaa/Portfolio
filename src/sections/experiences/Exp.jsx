@@ -9,6 +9,7 @@ import "./exp.css";
 import { useTheme } from "../../components/ThemeContext";
 const Exp = () => {
   const { theme } = useTheme();
+  console.log(theme);
   return (
     <section id="Exp" className={`${theme}`}>
       <h2>Experiences</h2>
@@ -17,14 +18,14 @@ const Exp = () => {
           {experienceData.map((item, index) => (
             <VerticalTimelineElement
               contentStyle={{
-                background:
-                  theme === "light_theme"
-                    ? "#f3f4f6"
-                    : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
+                background:
+                  theme === "light__theme"
+                    ? "#f0eff0"
+                    : "rgba(255, 255, 255, 0.05)",
               }}
               contentArrowStyle={{
                 borderRight:
