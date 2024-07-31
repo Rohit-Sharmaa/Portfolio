@@ -6,27 +6,18 @@ const data = [
   {
     id: 1,
     image: Image3,
-    title: "Malhaar'23",
-    desc: "Created a website for our college cultural fest ,aptly named Malhaar",
-    view: "https://rohitsharma-portfolio.netlify.app/",
-    github: "git@github.com:sanchitaa14/Malhaar2023.git",
+    title: "Share Your Space",
+    desc: "Built a web app where users can list flats with vacant rooms or find partners to share the same room. The app includes functionalities to create, delete, update, and search for listings",
+    view: "https://shareurspace.onrender.com/",
+    github: "https://github.com/Rohit-Sharmaa/ShareUrSpace",
   },
   {
     id: 2,
     image: Image6,
-    title: "Personal Portfolio",
-    desc: "Created a personal portfolio to showcases my passion for web devlopment.",
+    title: "Portfolio",
+    desc: "Built a portfolio website with customizable dark and light theme toggle functionality. Additionally, implemented a feature to persist the user’s selected theme.",
     view: "https://rohitsharma-portfolio.netlify.app/",
     github: "https://github.com/Rohit-Sharmaa/Portfolio-Rohit_Sharma",
-  },
-
-  {
-    id: 3,
-    image: Image2,
-    title: "Cara - Elevate Your Style",
-    desc: "Cara is a clothing website which have feature of shopping and cart feature .",
-    view: "https://e-commerce-sitee.netlify.app/",
-    github: "https://github.com/Rohit-Sharmaa/Ecommerce-Website",
   },
 ];
 

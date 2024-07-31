@@ -24,7 +24,10 @@
 .project__listing__cta {
   margin-top: 0.7rem;
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
+}
+#project {
+  font-size: larger;
 }
 
 @media screen and (max-width: 600px) {
