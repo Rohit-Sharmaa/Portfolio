@@ -9,12 +9,12 @@ import "./exp.css";
 import { useTheme } from "../../components/ThemeContext";
 const Exp = () => {
   const { theme } = useTheme();
-  console.log(theme);
+
   return (
     <section id="Exp" className={`${theme}`}>
       <h2>Experiences</h2>
       <div className="container exp-container">
-        <VerticalTimeline lineColor="hsl(270 , 5% , 94%)">
+        <VerticalTimeline lineColor="hsl(270, 89%, 41%)">
           {experienceData.map((item, index) => (
             <VerticalTimelineElement
               contentStyle={{
@@ -24,7 +24,7 @@ const Exp = () => {
                 padding: "1.3rem 2rem",
                 background:
                   theme === "light__theme"
-                    ? "#f0eff0"
+                    ? "#fff"
                     : "rgba(255, 255, 255, 0.05)",
               }}
               contentArrowStyle={{

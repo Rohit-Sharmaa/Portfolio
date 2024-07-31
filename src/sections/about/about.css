@@ -55,52 +55,6 @@
   }
 }
 
-/* text animation  */
-/* about.css */
-/* about.css */
-#about .animated-paragraph {
-  letter-spacing: 1px !important;
-  padding: 4px;
-  background: linear-gradient(
-    to right,
-    hsl(0, 0%, 30%) 0,
-    hsl(0, 0%, 100%) 10%,
-    hsl(0, 0%, 30%) 30%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 7s infinite linear;
-}
-
-#about .animated-paragraph {
-  position: relative;
-  overflow: hidden;
-}
-
-#about .paragraph-1 {
-  animation-delay: 0s;
-}
-
-#about .paragraph-2 {
-  animation-delay: 2s;
-}
-
-#about .paragraph-3 {
-  animation-delay: 4s;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 600px;
-  }
-  100% {
-    background-position: 600px;
-  }
-}
-
 /* removed the animation white screen bug  */
 [data-aos^="fade"][data-aos^="fade"] {
   opacity: 1 !important;

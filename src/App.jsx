@@ -1,7 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import Loader from "./components/Loader";
 import { ThemeProvider } from "./components/ThemeContext";
-
+import Skill from "../src/sections/skills/Skill";
 const Navbar = lazy(() => import("./sections/navbar/Navbar"));
 const Header = lazy(() => import("./sections/header/Header"));
 const Contact = lazy(() => import("./sections/contact/Contact"));
@@ -32,10 +32,13 @@ export const App = () => {
             <Navbar />
             <Header />
             <About />
+            <Skill />
             <Exp />
             <Project />
+
             <Contact />
             <Footer />
+
             <FloatingNav />
           </main>
         </Suspense>
