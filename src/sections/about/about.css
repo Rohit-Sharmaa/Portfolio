@@ -56,7 +56,9 @@
 }
 
 /* text animation  */
-.animated-paragraph {
+/* about.css */
+/* about.css */
+#about .animated-paragraph {
   letter-spacing: 1px !important;
   padding: 4px;
   background: linear-gradient(
@@ -70,29 +72,32 @@
   animation: shine 7s infinite linear;
 }
 
-.animated-paragraph {
+#about .animated-paragraph {
   position: relative;
   overflow: hidden;
 }
 
-.paragraph-1 {
+#about .paragraph-1 {
   animation-delay: 0s;
 }
 
-.paragraph-2 {
+#about .paragraph-2 {
   animation-delay: 2s;
 }
 
-.paragraph-3 {
-  animation-delay: 5s;
+#about .paragraph-3 {
+  animation-delay: 4s;
 }
 
 @keyframes shine {
   0% {
-    background-position: -100%;
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
   }
   100% {
-    background-position: 100%;
+    background-position: 600px;
   }
 }
 

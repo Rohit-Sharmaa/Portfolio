@@ -1,8 +1,7 @@
-import ReactDOM from 'react-dom/client';
-import { App } from './App';
-import './index.css'
-import './darkTheme.css'
+import ReactDOM from "react-dom/client";
+import { App } from "./App";
+import "./index.css";
+import "./darkTheme.css";
 
-
-const root = ReactDOM.createRoot(document.querySelector('#root'));
-root.render(<App/>)
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(<App />);
