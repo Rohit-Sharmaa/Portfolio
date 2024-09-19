@@ -33,7 +33,7 @@ const Exp = () => {
                     ? "0.6rem solid rgba(203, 206, 209, 0.9)"
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
-              date={item.data}
+              date={item.date}
               icon={item.icon}
               iconStyle={{
                 color: "white",

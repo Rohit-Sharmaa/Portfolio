@@ -1,6 +1,5 @@
 body {
   background-color: hsl(0, 5%, var(--white-lightness));
-  text-align: center;
 }
 .spinner {
   width: 100px;

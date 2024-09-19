@@ -31,9 +31,10 @@ export const App = () => {
           <main>
             <Navbar />
             <Header />
-            <About />
-            <Skill />
             <Exp />
+            <Skill />
+            <About />
+
             <Project />
 
             <Contact />

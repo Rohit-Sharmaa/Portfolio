@@ -1,5 +1,5 @@
-import { LuGraduationCap } from "react-icons/lu";
-import { CgWorkAlt } from "react-icons/cg";
+// import { LuGraduationCap } from "react-icons/lu";
+// import { CgWorkAlt } from "react-icons/cg";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 const experienceData = [
   {
@@ -16,7 +16,7 @@ const experienceData = [
     description:
       "During my internship at UPL Ltd., I gained practical experience in frontend development. I contributed to designing and developing several web pages, focusing on creating user-friendly and visually appealing interfaces. My role involved implementing responsive designs, optimizing page performance. I also collaborated with backend developers to integrate APIs and enhance overall functionality.",
     icon: <LiaLaptopCodeSolid />,
-    data: "Aug'23-sep'23",
+    date: "Aug'23-sep'23",
   },
   {
     title: "Teaching Assistant - DSA",
@@ -24,7 +24,7 @@ const experienceData = [
     description:
       "During my internship at Apna College, I worked as a Teaching Assistant, solving students’ doubts related to various data structures and algorithms. I helped them understand complex topics in a clear and accessible manner. My role involved providing one-on-one guidance, explaining concepts in an easy way, and facilitating discussions to enhance their problem-solving skills.",
     icon: <LiaLaptopCodeSolid />,
-    data: "May'24 - Present",
+    date: "May'24 - sep'24",
   },
 ];
 export default experienceData;

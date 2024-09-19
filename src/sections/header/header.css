@@ -8,7 +8,7 @@ header {
   transition: var(--transition);
   height: 100vh;
 
-  background-color: #eef5ff;
+  /* background-color: #eef5ff; */
 }
 
 .header__container {
@@ -54,7 +54,7 @@ header {
 }
 
 .header__container p {
-  width: 35rem;
+  width: 41rem;
   text-align: center;
   margin: 0.6rem 0 2rem;
 }
@@ -74,13 +74,14 @@ header {
 }
 
 .header__socials a {
-  width: 1.8rem;
+  width: 2.5rem;
   aspect-ratio: 1/1;
   background: var(--color-light);
   color: var(--color-black);
   display: grid;
   place-items: center;
   border-radius: var(--border-radius-3);
+  padding: 0.5rem;
 }
 
 .header__socials a:hover {
@@ -174,7 +175,7 @@ h3.header_name span {
   cursor: pointer;
   text-transform: uppercase;
   padding: 4px;
-  animation: shine 4s infinite linear !important;
+  animation: shine 4s infinite !important;
   background: linear-gradient(
     to right,
     hsl(0, 0%, 30%) 0,
@@ -189,10 +190,7 @@ h3.header_name span {
   0% {
     background-position: 0;
   }
-  60% {
-    background-position: 600px;
-  }
   100% {
-    background-position: 600px;
+    background-position: 550px;
   }
 }

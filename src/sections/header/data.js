@@ -12,16 +12,16 @@ const data = [
   },
   { id: 2, link: "https://github.com/Rohit-Sharmaa", icon: <AiFillGithub /> },
 
-  // {
-  //   id: 3,
-  //   link: "https://www.codechef.com/users/iamrohit3000",
-  //   icon: <SiCodechef />,
-  // },
-  // {
-  //   id: 4,
-  //   link: "https://codeforces.com/profile/rj3377295",
-  //   icon: <SiCodeforces />,
-  // },
+  {
+    id: 3,
+    link: "https://www.codechef.com/users/iamrohit3000",
+    icon: <SiCodechef />,
+  },
+  {
+    id: 4,
+    link: "https://codeforces.com/profile/rj3377295",
+    icon: <SiCodeforces />,
+  },
   { id: 5, link: "https://leetcode.com/RohitSharmaa/", icon: <SiLeetcode /> },
 ];
 
